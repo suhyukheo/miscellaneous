@@ -1,0 +1,139 @@
+:root{
+  --bg-color :white;
+  --content-color:#C9D6DF;
+  --title-font-color : white;
+  --title-font-size : 3vh;
+  --content-font-size :3vh; 
+  --content-bg:#343a40;
+}
+*{
+  box-sizing: border-box;
+  border: 0;
+  margin: 0; 
+}
+html , body , .container{
+  height: 100vh;
+  background-color: var(--bg-color);
+}
+textarea:focus, input:focus{
+  outline: none;
+}
+.container{
+  width: 100vw;
+  height: 100vh;
+}
+.main-contnent{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.content-1{
+  width: 40%;
+  padding: 1%;
+  position: relative;
+}
+.content-2{
+  width: 60%;
+  padding: 1%;
+}
+.input_page{
+  width: 100%;
+  height: 100%;
+  background-color:var(--content-color);
+  border-radius: 5vh;
+  padding: 5%;
+}
+.title_box{
+  background-color:var(--content-bg);
+  width: 100%;
+  height: 15%;
+  font-size: var(--title-font-size);
+  border-radius: 5vh;
+  margin-bottom: 1vh;
+  color: var(--content-bg);
+  font-weight: 600;
+  display: flex;
+  padding: 5%;
+}
+.title_box .icon_box{
+  width: 20%;
+  height: 100%;
+  background-color: #343a40;
+  color: white;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+.title_box .title{
+  width: 80%;
+  height: 100%;
+  background-color: #343a40;
+  text-align: center;
+  color: var(--title-font-color);
+  font-size: var(--title-font-size);
+}
+.input_text{
+  overflow: auto;
+  width: 100%;
+  height: 85%;
+  padding: 5%;
+  border-radius: 5vh;
+  border: 1vh solid var(--content-color);
+  font-size: var(--content-font-size);
+  font-weight: 600;
+  color: var(--bg-color);
+  background-color: var(--content-bg);
+
+}
+.btn{
+  transition:  all 0.5s;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right:0;
+  top: 50%;
+  transform: translate(50%,-50%);
+  border-radius: 50%;
+}
+.btn:hover{
+  transition:  all 0.5s;
+  width: 60px;
+  height: 60px;
+  background-color: var(--content-bg);
+  color: var(--content-color);
+}
+.output-box{
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  border-radius: 5vh;
+  padding: 2.5%;
+  background-color: var(--content-color);
+}
+.output-content{
+  width: 100%;
+  height: 20vh;
+  background-color: var(--content-bg);
+  border-radius: 3.5vh;
+  padding: 2.5%;
+  color: var(--content-color);
+  margin: 15px 0px;
+  position: relative;
+}
+.output-content h2{
+  margin-bottom: 1vh;
+}
+.output-content p{
+  overflow: auto;
+}
+.output-content button{
+  position: absolute;
+  width: 4vh;
+  height: 4vh;
+  font-size: 3vh;
+  color: #C9D6DF;
+  background-color:#343a40;
+  right: 0;
+  bottom: 0;
+  transform: translate(-50%,-50%);
+}
